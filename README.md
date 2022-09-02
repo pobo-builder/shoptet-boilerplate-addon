@@ -69,9 +69,10 @@ Nyní začneme psát první úpravu našeho e-shopu. Spustíme příkaz `npm run
 
 ![npm run watch](./guide/run-parcel.png "npm run watch")
 
-Nyní Parcel sleduje soubory JS a SCSS v adresáři `src/*` a při jejich změně je zkompiluje do adresáře `dist/*`. 
+Nyní **Parcel** sleduje soubory JS a SCSS v adresáři `src/*` a při jejich změně je zkompiluje do adresáře `dist/*`. Dále
+**Parcel** vytvořil tzv. *dev server* na lokálním PC, který poslouchá na portu **8088** (lze otestovat otevřením [http://localhost:8088](http://localhost:8088)).
 
-Nyní si v nové záložce terminálu spustíme příkaz `npm run proxy`, terminál vrátí následující:
+Nyní si v nové záložce terminálu spustíme příkaz `npm run proxy`, terminál vrátí následující výsledek:
 
 ![npm run proxy](./guide/run-proxy.png "npm run proxy")
 
@@ -119,7 +120,7 @@ elem.innerHTML = `
 document.body.appendChild(elem);
 ```
 
-Lištu si nyní nastlujeme - vložíme do souboru `src/asset.css` následující kód:
+Lištu si nyní nastylujeme - vložíme do souboru `src/asset.css` následující kód:
 
 ```css
 .pobo-text-header {
@@ -143,7 +144,9 @@ Po uložení kódu vidíme nad hlavičkou v našem e-shopu novou lištu:
 ![Hlavička obohacená o informační lištu](./guide/header-plugin.png "Hlavička obohacená o informační lištu")
 
 A je to. Nyní můžeme pokračovat dále v úpravách v pdostatě jakékoliv části, kód se vždy po uložení „promítne“ na e-shop,
-což je velký benefit. Pro naše účely provedeme poslední akci - JavaScript a SCSS zkompilujeme do produkčního stavu. 
+což je velký benefit. 
+
+Pro naše účely provedeme poslední akci - JavaScript a SCSS zkompilujeme do produkčního stavu. 
 
 Zastavíme oba příkazy `npm run watch` i `npm run proxy` (CMD+C na MacOS / CTRL+C na Win / linux) a smažeme načítání
 JavaScript a CSS z administrace Shoptetu. 
