@@ -1,0 +1,35 @@
+{
+  "name": "shoptet-boilerplate-addon",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "watch": "npx parcel src/*.js src/*.scss -p 8088",
+    "build": "npx parcel build src/*.js src/*.scss --no-source-maps",
+    "proxy": "ngrok http 8088"
+  },
+  "targets": {
+    "default": {
+      "distDir": "dist"
+    }
+  },
+  "engines": {
+    "node": ">=14.0",
+    "npm": ">=6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pobo-builder/shoptet-boilerplate-addon.git"
+  },
+  "author": "Tomas Smetka <tomas@pobo.cz>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pobo-builder/shoptet-boilerplate-addon/issues"
+  },
+  "homepage": "https://github.com/pobo-builder/shoptet-boilerplate-addon#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.7.0",
+    "ngrok": "4.3.3",
+    "parcel": "2.7.0"
+  }
+}
